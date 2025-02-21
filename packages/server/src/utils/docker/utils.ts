@@ -368,7 +368,7 @@ export const generateConfigContainer = (application: ApplicationNested) => {
 			: {
 					// if app have mounts keep manager as constraint
 					Placement: {
-						Constraints: haveMounts ? ["node.role==manager"] : [],
+						Constraints: haveMounts ? ["node.role==manager", "node.labels.dokploy==1"] : [],
 					},
 				}),
 		...(labelsSwarm && {

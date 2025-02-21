@@ -5,7 +5,7 @@ on:
     branches: [main, canary]
 
 env:
-  IMAGE_NAME: dokploy/monitoring
+  IMAGE_NAME: velor2012/dokploy-monitoring
 
 jobs:
   docker-amd:
