@@ -60,7 +60,7 @@ export const initializeTraefik = async ({
 			},
 			Networks: [{ Target: "dokploy-network" }],
 			Placement: {
-				Constraints: ["node.role==manager"],
+				Constraints: ["node.role==manager", "node.labels.dokploy==1"],
 			},
 		},
 		Mode: {
