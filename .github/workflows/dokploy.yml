@@ -5,7 +5,7 @@ on:
     branches: [main, canary, "1061-custom-docker-service-hostname"]
 
 env:
-  IMAGE_NAME: dokploy/dokploy
+  IMAGE_NAME: velor2012/dokploy
 
 jobs:
   docker-amd:
